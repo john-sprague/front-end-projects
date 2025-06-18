@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+
+        body {
+          background-color: slategray;
+        }
+
+        .blog-card {
+          height: 540px;
+          width: 340px;
+          display: flex; 
+          background-color: white;
+          background-color: #fff;
+          border-radius: 0.5rem; 
+          box-shadow:
+            0 1px 2px -1px rgba(0, 0, 0, 0.1),
+            0 1px 3px 0 rgba(0, 0, 0, 0.1);
+          gap: 16px; 
+          font-family: "Noto Sans", sans-serif;
+          font-weight: 400;
+          display: flex;
+          flex-direction: column;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 200px;
+        }
+
+        .blog-card__container {
+          margin: 8px 16px 24px 16px;
+        }
+
+        .blog-card__img__container {
+          height: 288px;
+          width: 340px;
+          gap: 28px;
+        }
+
+        .blog-card__img {
+          height: 288px;
+          width: 340px;
+          border-top-left-radius: 0.5rem; 
+          border-top-right-radius: 0.5rem; 
+        }
+
+        .blog-card__badge {
+          color: rgb(21 128 61);
+          display: inline-flex;
+          align-items: center; 
+          border-radius: 99999px;
+          border-color: rgb(187 247 208);
+          border-width: 1px; 
+          background-color: rgb(220 252 231);
+          font-size: 14px; 
+          padding: 2px 8px 2px 8px;
+        }
+
+        .blog-card__title {
+          margin-top: 8px;
+          font-weight: 600;
+          font-size: 18px; 
+        } 
+
+        .blog-card__desc__container {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          align-self: stretch;
+        }
+
+        .blog-card__desc {
+          color: #525252;
+          font-weight: 600;
+          font-size: 18px;
+          margin-top: 12px;
+          line-height: 28px;
+        }
+        
+
+        .blog-card__button__container {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          border-radius: 4px;
+          margin-top: 24px;
+        }
+
+        .blot-card__button__text {
+          display: flex;
+          justify-content: left;
+          align-items: left;
+          padding: 0px 2px;
+        }
+
+        .blog-card__button__text {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #4338ca;
+        }
+        .blog-card__arrow__container {
+            width: 20px;
+            height: 20px;
+          }
+          
+          .blog-card__arrow {
+            width: 12px;
+            height: 12px;
+            color: #4338ca;
+          }
+        
+    </style>
+  </head>
+  <body>
+      
+      <div class="blog-card">
+        <div class="blog-card__img__container">
+          <img src="./img/living-room-img.jpg" alt="Earthy living room" class="blog-card__img"/>
+        </div>
+        <div class="blog-card__container">
+          <div class="blog-card__header">
+            <div class="blog-card__badge">
+              Interior
+            </div>
+            <div class="blog-card__title">
+              Top 5 Living Room Inspirations
+            </div>
+          </div>
+          <div class="blog-card__desc" >
+            <span class="blog-card__desc">
+              Curated vibrants colors for your living, make it pop & calm in the same time.
+            </span>
+          </div>
+          <div class="blog-card__button__container">
+            <div class="blog-card__button">
+              <span class="blog-card__button__text">Read More</span> 
+            </div>
+            <div class="blog-card__arrow__container">
+              <img class="blog-card__arrow__container" src="./img/arrow-right-line.png" alt="Button right arrow" />
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
