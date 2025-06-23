@@ -12,42 +12,143 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
     <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
+      body {
+        background-image: linear-gradient(to right, #F9FAFB, #D2D6DB);
+        gap: 16px; 
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #525252;
+      }
+
+      .profile-card {
+        background-color: #FFFFFF; 
+        width: 340px;
+        margin-inline: auto;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+        border-radius: 8px;
+        box-shadow:  0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10);
+      }
+
+      .profile-card__avatar-container {
+        height: 4rem;
+        width: 4rem;
+        margin-top: 24px;
+      }
+
+      .profile-card__user-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        align-self: stretch;
+      }
+
+      .profile-card__username {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #d9d9d9;
+      }
+
+      .profile-card__userhandle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+      }
+
+      .profile-card__details {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 16px;
+        padding-right: 16px; 
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+      }
+
+      .profile-card__button {
+        background-color: #4338CA;
+        border-radius: 4px;
+        align-self: stretch;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 8px; 
+        color: white;
+        box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10);
+        padding: 10px 16px;
+        line-height: 24px;
+      }
+
+      .profile-card__icon-container {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        align-self: stretch;
+        margin-bottom: 24px;
+      }
+
+      .profile-card__icon {
+        height: 36px;
+        width: 36px;
+      }
+
+      .profile-card__icon-span {
+        height: 36px;
+        width: 36px; 
+      }
     </style>
   </head>
   <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
+    <div class="profile-card">
+      <div class="profile-card__avatar-container">
+        <img src="./img/profile.png" class="profile-card__avatar" alt="Sarah Dole’s portrait"/>
+      </div>
 
-    <!-- 
-      Sarah Dole
-      Front End Engineer @ Microsoft
-      I turn coffee into bugs which are fixed by someone else. Certified Stack Overflow and ChatGPT developer.
-      Contact me
-     -->
+      <div class="profile-card__user-container">
+        <h2 class="profile-card__username">Sarah Dole</h2>
+        <h2 class="profile-card__userhandle">Front End Engineer @ Microsoft</h2>
+      </div>
 
-    <!-- Attribute this challenge to yourself! -->
+      <div class="profile-card__details">
+        <p>I turn coffee into bugs which are fixed by someone else. Certified Stack Overflow and ChatGPT developer.</p>
+      </div>
+
+      <button class="profile-card__button" type="button" aria-label="Contact Sarah Dole">
+        Contact me 
+      </button>
+
+      <div class="profile-card__icon-container">
+        <span class="profile-card__icon-span"><img src="./img/githubIcon.png" className="profile-card__icon"  alt="GitHub Icon"/></span>
+        <span class="profile-card__icon-span"><img src="./img/linkedInIcon.png" className="profile-card__icon" alt="LinkedIn Icon"/></span>
+        <span class="profile-card__icon-span"><img src="./img/linkedIn.png" className="profile-card__icon" alt="Instagram Icon"/></span>
+        <span class="profile-card__icon-span"><img src="./img/xIcon.png" className="profile-card__icon" alt="X Icon"/></span>
+      </div>
+    </div>
+
+    <!--Credits-->
     <div class="credits" data-gfe-screenshot-exclude="true">
-      A challenge by
+      Built by
       <a
-        href="https://www.greatfrontend.com/projects?ref=challenges"
+        href="https://github.com/john-sprague"
         target="_blank"
-        >GreatFrontEnd Projects</a
-      >. Built by
-      <a
-        href="https://www.greatfrontend.com/projects/u/username"
-        target="_blank"
-        >Your Name</a
+        >John Sprague</a
       >.
     </div>
     <script src="js/index.js"></script>
